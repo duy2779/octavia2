@@ -1,0 +1,52 @@
+.team {
+  padding: 150px 0;
+  background-color: $gray-lighter;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 30px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 60px 0;
+    }
+  }
+
+  &-content {
+    @include desktop {
+      max-width: 346px;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &-desc {
+    margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-images {
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+  }
+
+  &-img:nth-child(2) {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+}

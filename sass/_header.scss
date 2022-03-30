@@ -1,0 +1,38 @@
+.header {
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+
+    @include mobile {
+      padding: 20px 0;
+    }
+  }
+
+  &-label {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-phone {
+    margin-left: 16px;
+    color: $gray;
+    font-weight: 600;
+  }
+
+  &-icon {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+
+  @include mobile {
+    gap: 0 20px;
+  }
+}

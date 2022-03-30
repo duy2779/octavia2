@@ -1,0 +1,38 @@
+.partner {
+  margin-bottom: 150px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px 0;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 0;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    transition: opacity 0.2s linear;
+
+    @include tablet {
+      padding: 0 25px;
+    }
+
+    &:hover {
+      opacity: 0.1;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.contact {
+  padding: 150px 0;
+  background: url("../../images/contact-bg.png") no-repeat center / cover;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  &-container {
+    max-width: 600px;
+  }
+
+  &-text-content {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &-heading {
+    font-weight: 300;
+  }
+
+  &-desc {
+    line-height: lineH(16, 30);
+  }
+
+  &-heading,
+  &-desc {
+    color: white;
+  }
+
+  &-field {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 14px;
+    padding: 20px 30px;
+    border: 1px solid rgba(white, 0.5);
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    transition: border 0.2 linear;
+
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+
+    &:focus {
+      border: 1px solid white;
+    }
+  }
+
+  &-area {
+    resize: none;
+    min-height: 100px;
+  }
+}
